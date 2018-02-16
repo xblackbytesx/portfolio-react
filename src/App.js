@@ -17,6 +17,10 @@ class App extends Component {
         </header>
         <div className="main">
           <Pane props={this.state.components[1].aboutMe} />
+          <Pane props={this.state.components[2].myWork} />
+          <Pane props={this.state.components[1].aboutMe} />
+          <Pane props={this.state.components[1].aboutMe} />
+          <Pane props={this.state.components[1].aboutMe} />
         </div>
         <Footer />
       </div>
