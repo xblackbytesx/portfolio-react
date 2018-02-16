@@ -37,9 +37,11 @@ class App extends Component {
             <ul id="skill">
                 <li class="skills">
                   <ul>
-                    <ProgresBar className="html">html</ProgresBar>
-                    <ProgresBar className="css">css</ProgresBar>
-                    <ProgresBar className="javascript">javascript</ProgresBar>
+                    {
+                      this.state.components[3].mySkills[0].skills.map((skill) => {
+                        return <ProgresBar className={skill.skill}>{skill.skill}</ProgresBar>
+                      })
+                    }
                   </ul>
                 </li>
               </ul>
