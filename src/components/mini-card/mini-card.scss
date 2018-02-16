@@ -1,0 +1,20 @@
+@import "../../static/css/settings";
+
+.mini-card {
+  padding: 0 8px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &__wrapper {
+    background: #FFF;
+    border-radius: 3px;
+    max-width: 300px;
+    background-size: cover;
+  }
+
+  &__title {
+    padding: $gutter;
+  }
+}

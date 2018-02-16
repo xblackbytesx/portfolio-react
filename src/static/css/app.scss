@@ -1,4 +1,12 @@
+@import "settings";
 @import "boilerplate-helpers";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html, body {
   height: 100%;
@@ -13,6 +21,16 @@ body {
   height: 100%;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   min-height: 100%;
   width: 100%;
@@ -22,5 +40,6 @@ header {
 
 .main {
   max-width: 68em;
-  margin: 16px auto;
+  margin: $gutter auto;
+  padding: $gutter;
 }

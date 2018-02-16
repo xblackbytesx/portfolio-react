@@ -1,0 +1,73 @@
+$skills: (
+  html: (100%, #F0BB4B, #D9AA44),
+  css-sass: (100%, #F0BB4B, #D9AA44),
+  javascript: (80%, #A1CE5B, #91BA52),
+  ux-design: (70%, #66B3CC, #5DA3BA),
+  devops: (70%, #66B3CC, #5DA3BA),
+  python-django: (60%, #F674A4, #E06995)
+);
+
+#skill {
+    list-style: none;
+    position: relative;
+    line-height: 2em;
+
+    li li {
+        padding-left: 150px;
+        position: relative;
+    }
+
+    .bar-wrapper {
+        display: block;
+        position: relative;
+        margin-bottom: 50px;
+        background-image: linear-gradient(to bottom, #E1DDD9, #E9E5E2);
+        height: 20px;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 0 #BEBBB9 inset, 0 1px 0 #FCFCFC;
+        -webkit-box-shadow: 0 1px 0 #BEBBB9 inset, 0 1px 0 #FCFCFC;
+        box-shadow: 0 1px 0 #BEBBB9 inset, 0 1px 0 #FCFCFC;
+    }
+
+    .bar {
+        height: 18px;
+        margin: 1px 2px;
+        position: absolute;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 0 #FCFCFC inset, 0 1px 0 #BEBBB9;
+        -webkit-box-shadow: 0 1px 0 #FCFCFC inset, 0 1px 0 #BEBBB9;
+        box-shadow: 0 1px 0 #FCFCFC inset, 0 1px 0 #BEBBB9;
+    }
+
+    .bar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.appeared,
+.no-js {
+    @each $skill, $value in $skills {
+        .#{$skill} {
+            width: nth($value, 1);
+            animation: #{$skill} 2s ease-out;
+            background-image: linear-gradient(to bottom, nth($value, 2), nth($value, 3));
+        }
+
+        @keyframes #{$skill} {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: nth($value, 1);
+            }
+        }
+    }
+}
+
+// @include media($tablet) {
+//     .skills {
+//         @include span-columns(4);
+//     }
+// }

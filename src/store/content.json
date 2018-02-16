@@ -14,13 +14,22 @@
       {
         "aboutMe": [{
           "title": "About Me",
+          "image": "https://www.fabiobier.com/static/img/fabio-in-the-wild.jpg",
           "content": "<h2>Experience</h2>\n <p>\n  I specialize in the design and development of clean and smart user interfaces for the modern web."
         }]
       },
       {
         "myWork": [{
           "title": "My Work",
-          "content": "<h2>Experience</h2>\n <p>\n  I specialize in the design and development of clean and smart user interfaces for the modern web."
+          "content": "<h2>Experience</h2> \n I specialize in the design and development of clean and smart user interfaces for the modern web."
+        }]
+      },
+      {
+        "mySkills": [{
+          "title": "My Skills",
+          "skills": [{
+            "html": "test"
+          }]
         }]
       }
     ]
