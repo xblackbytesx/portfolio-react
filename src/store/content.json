@@ -10,6 +10,12 @@
           "title": "Title test",
           "body": "Body test"
         }]
+      },
+      {
+        "aboutMe": [{
+          "title": "About Me",
+          "content": "<h2>Experience</h2>\n <p>\n  I specialize in the design and development of clean and smart user interfaces for the modern web."
+        }]
       }
     ]
   }]
