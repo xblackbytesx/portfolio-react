@@ -16,11 +16,35 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <TitleCrawl content={this.state.components[0].titleCrawl} />
+          {
+            this.state.components.map((component, index) => {
+              return <TitleCrawl content={component.titleCrawl} key={component.index} />
+            })
+          }
         </header>
         <div className="main">
-          <Pane props={this.state.components[1].aboutMe} />
-          <Pane props={this.state.components[2].myWork} />
+          {
+            this.state.components[1].aboutMe.map((component, index) => {
+              return (
+                <Pane title={component.title} image={component.image}>
+                  <article>
+                    <p>{component.content}</p>
+                  </article>
+                </Pane>
+              )
+            })
+          }
+          {
+            this.state.components[2].myWork.map((component, index) => {
+              return (
+                <Pane title={component.title} image={component.image}>
+                  <article>
+                    <p>{component.content}</p>
+                  </article>
+                </Pane>
+              )
+            })
+          }
 
           <ContentSlider slidesToShow={3} slidesToScroll={1}>
             <MiniCard title="NU.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
@@ -31,22 +55,19 @@ class App extends Component {
             <MiniCard title="NUSport.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg" />
           </ContentSlider>
 
-          <div className="pane">
-            <div className="pane__title"><h2>My Skills</h2></div>
-            <div className="pane__content">
+          <Pane title={this.state.components[3].mySkills[0].title}>
             <ul id="skill">
-                <li class="skills">
-                  <ul>
-                    {
-                      this.state.components[3].mySkills[0].skills.map((skill) => {
-                        return <ProgresBar className={skill.skill}>{skill.skill}</ProgresBar>
-                      })
-                    }
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+              <li className="skills">
+                <ul>
+                  {
+                    this.state.components[3].mySkills[0].skills.map((skill, index) => {
+                      return <ProgresBar className={skill.skill} key={skill.index}>{skill.skill}</ProgresBar>
+                    })
+                  }
+                </ul>
+              </li>
+            </ul>
+          </Pane>
         </div>
         <Footer />
       </div>
