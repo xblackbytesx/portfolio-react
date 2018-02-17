@@ -4,6 +4,7 @@ import Pane from './components/pane/pane';
 import ContentSlider from './components/content-slider/content-slider';
 import MiniCard from './components/mini-card/mini-card';
 import ProgresBar from './components/progress-bar/progress-bar';
+import Testimonial from './components/testimonial/testimonial';
 import Footer from './components/footer/footer';
 import StubData from './store/content.json';
 
@@ -26,7 +27,7 @@ class App extends Component {
           {
             this.state.components[1].aboutMe.map((component, index) => {
               return (
-                <Pane title={component.title} image={component.image}>
+                <Pane title={component.title} image={component.image} key={component.index}>
                   <article>
                     <p>{component.content}</p>
                   </article>
@@ -37,7 +38,7 @@ class App extends Component {
           {
             this.state.components[2].myWork.map((component, index) => {
               return (
-                <Pane title={component.title} image={component.image}>
+                <Pane title={component.title} image={component.image} key={component.index}>
                   <article>
                     <p>{component.content}</p>
                   </article>
@@ -66,6 +67,14 @@ class App extends Component {
                 </ul>
               </li>
             </ul>
+          </Pane>
+
+          <Pane title={this.state.components[5].testimonials[0].title}>
+            {
+              this.state.components[5].testimonials[0].testimonials.map((item, index) => {
+                return <Testimonial name={item.name} title={item.title} company={item.company} content={item.content} />
+              })
+            }
           </Pane>
         </div>
         <Footer />
