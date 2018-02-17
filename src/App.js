@@ -47,20 +47,19 @@ class App extends Component {
           }
 
           <ContentSlider slidesToShow={3} slidesToScroll={1}>
-            <MiniCard title="NU.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-            <MiniCard title="NUSport.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg" />
-            <MiniCard title="NU.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-            <MiniCard title="NUSport.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg" />
-            <MiniCard title="NU.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-            <MiniCard title="NUSport.nl" image="https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg" />
+            {
+              this.state.components[3].myProjects[0].projects.map((item, index) => {
+                return <MiniCard title={item.title} image={item.image} key={item.index} />
+              })
+            }
           </ContentSlider>
 
-          <Pane title={this.state.components[3].mySkills[0].title}>
+          <Pane title={this.state.components[4].mySkills[0].title}>
             <ul id="skill">
               <li className="skills">
                 <ul>
                   {
-                    this.state.components[3].mySkills[0].skills.map((skill, index) => {
+                    this.state.components[4].mySkills[0].skills.map((skill, index) => {
                       return <ProgresBar className={skill.skill} key={skill.index}>{skill.skill}</ProgresBar>
                     })
                   }

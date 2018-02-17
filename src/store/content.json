@@ -25,6 +25,18 @@
         }]
       },
       {
+        "myProjects": [{
+            "projects": [
+              {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+              {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"},
+              {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+              {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"},
+              {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+              {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"}
+            ]
+        }]
+      },
+      {
         "mySkills": [{
           "title": "My Skills",
           "skills": [
