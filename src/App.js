@@ -75,13 +75,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// <ContentSlider slidesToShow={3} slidesToScroll={1}>
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-//   <img src="https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg" />
-// </ContentSlider>
