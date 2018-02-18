@@ -72,7 +72,15 @@ class App extends Component {
           <Pane title={this.state.components[5].testimonials[0].title}>
             {
               this.state.components[5].testimonials[0].testimonials.map((item, index) => {
-                return <Testimonial name={item.name} title={item.title} company={item.company} content={item.content} />
+                return (
+                  <Testimonial
+                    name={item.name}
+                    title={item.title}
+                    company={item.company}
+                    image={item.image}
+                    content={item.content}
+                  />
+                )
               })
             }
           </Pane>
