@@ -9,7 +9,8 @@ const Pane = (props) => {
         <h1>{props.title}</h1>
       </div>
       <figure className="pane__image">
-        {props.image
+        {
+          props.image
           ? <img src={props.image} alt="Pane image" />
           : null
         }
@@ -17,6 +18,13 @@ const Pane = (props) => {
       <div className="pane__content">
         {props.children}
       </div>
+      {
+        props.footerLink
+        ? <footer className="pane__footer">
+            <a href="#">props.footerLink</a>
+          </footer>
+        : null
+      }
     </section>
   )
 }

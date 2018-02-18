@@ -18,8 +18,16 @@ class App extends Component {
       <div className="App">
         <header>
           {
-            this.state.components.map((component, index) => {
-              return <TitleCrawl content={component.titleCrawl} key={component.index} />
+            this.state.components[0].titleCrawl.map((item, index) => {
+              return (
+                <TitleCrawl
+                  start={item.start}
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  content={item.content}
+                  key={item.index}
+                />
+              )
             })
           }
         </header>

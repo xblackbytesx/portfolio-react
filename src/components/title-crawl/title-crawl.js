@@ -8,7 +8,7 @@ const TitleCrawl = (props) => {
         <p id="start">{props.start}</p>
 
         <header>
-          <h1>FABIO BIER <sub>Front-end Jedi</sub></h1>
+          <h1>{props.title} <sub>{props.subtitle}</sub></h1>
         </header>
 
         <div id="titles">

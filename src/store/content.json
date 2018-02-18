@@ -5,10 +5,14 @@
     "components": [
       {
         "titleCrawl": [{
-          "start": "Start test",
-          "intro": "Intro test",
-          "title": "Title test",
-          "body": "Body test"
+          "start": "A short time ago in a suburban town very, very close to Amsterdam…",
+          "title": "Fabio Bier",
+          "subtitle": "Front-end Jedi",
+          "body": [
+            {"p1": "It is a period of many connected devices."},
+            {"p2": "With so many different form factors offering a unified user experience across the board is often challenging."},
+            {"p3": "With so many different form factors offering a unified user experience across the board is often challenging.", "class": "center"}
+          ]
         }]
       },
       {
