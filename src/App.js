@@ -3,7 +3,7 @@ import TitleCrawl from './components/title-crawl/title-crawl';
 import Pane from './components/pane/pane';
 import ContentSlider from './components/content-slider/content-slider';
 import MiniCard from './components/mini-card/mini-card';
-import ProgresBar from './components/progress-bar/progress-bar';
+import Skills from './components/skills/skills';
 import Testimonial from './components/testimonial/testimonial';
 import Footer from './components/footer/footer';
 import StubData from './store/content.json';
@@ -64,17 +64,7 @@ class App extends Component {
           </ContentSlider>
 
           <Pane title={this.state.components[4].mySkills[0].title}>
-            <ul id="skill">
-              <li className="skills">
-                <ul>
-                  {
-                    this.state.components[4].mySkills[0].skills.map((skill, index) => {
-                      return <ProgresBar className={skill.skill} key={skill.index}>{skill.skill}</ProgresBar>
-                    })
-                  }
-                </ul>
-              </li>
-            </ul>
+            <Skills skills={this.state.components[4].mySkills[0].skills} />
           </Pane>
 
           <Pane title={this.state.components[5].testimonials[0].title}>

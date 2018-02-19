@@ -44,9 +44,9 @@
         "mySkills": [{
           "title": "My Skills",
           "skills": [
-            {"skill": "html", "level": 98},
-            {"skill": "css", "level": 95},
-            {"skill": "javascript", "level": 69}
+            {"skill": "HTML", "classname": "html", "level": 98},
+            {"skill": "CSS/SASS", "classname": "css", "level": 95},
+            {"skill": "Javascript", "classname": "javascript", "level": 69}
           ]
         }]
       },

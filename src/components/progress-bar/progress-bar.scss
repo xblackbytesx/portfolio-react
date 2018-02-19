@@ -1,6 +1,6 @@
 $skills: (
   html: (100%, #F0BB4B, #D9AA44),
-  css-sass: (100%, #F0BB4B, #D9AA44),
+  css: (100%, #F0BB4B, #D9AA44),
   javascript: (80%, #A1CE5B, #91BA52),
   ux-design: (70%, #66B3CC, #5DA3BA),
   devops: (70%, #66B3CC, #5DA3BA),
@@ -46,24 +46,26 @@ $skills: (
     }
 }
 
-.appeared,
-.no-js {
-    @each $skill, $value in $skills {
-        .#{$skill} {
-            width: nth($value, 1);
-            animation: #{$skill} 2s ease-out;
-            background-image: linear-gradient(to bottom, nth($value, 2), nth($value, 3));
-        }
+@each $skill, $value in $skills {
+    .#{$skill} {
+        width: nth($value, 1);
+        animation: #{$skill} 2s ease-out;
+        background-image: linear-gradient(to bottom, nth($value, 2), nth($value, 3));
+    }
 
-        @keyframes #{$skill} {
-            0% {
-                width: 0;
-            }
-            100% {
-                width: nth($value, 1);
-            }
+    @keyframes #{$skill} {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: nth($value, 1);
         }
     }
+}
+
+.appeared,
+.no-js {
+
 }
 
 // @include media($tablet) {
