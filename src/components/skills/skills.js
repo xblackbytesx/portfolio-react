@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from '../progress-bar/progress-bar';
+import './skills.css';
 
 const Skills = (props) => {
   return (
@@ -8,7 +9,17 @@ const Skills = (props) => {
         <ul>
           {
               props.skills.map((skill, index) => {
-              return <ProgressBar className={skill.classname} level={skill.level} key={skill.index}>{skill.skill}</ProgressBar>
+              return (
+                <li>
+                  <ProgressBar
+                    className={skill.classname}
+                    level={skill.level}
+                    key={skill.index}
+                  >
+                    {skill.skill}
+                  </ProgressBar>
+                </li>
+              )
             })
           }
         </ul>
