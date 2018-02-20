@@ -1,9 +1,0 @@
-{
-  "apps": [
-    {
-      "name": "portfolio",
-      "script": "serve",
-      "args": "--single --ssl build"
-    }
-  ]
-}
