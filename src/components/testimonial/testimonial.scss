@@ -1,0 +1,11 @@
+.testimonial {
+  display: flex;
+
+  &__image {
+    width: 100px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
