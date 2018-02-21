@@ -46,7 +46,10 @@
           "skills": [
             {"skill": "HTML", "classname": "html", "level": 98},
             {"skill": "CSS/SASS", "classname": "css", "level": 95},
-            {"skill": "Javascript", "classname": "javascript", "level": 69}
+            {"skill": "Javascript", "classname": "javascript", "level": 69},
+            {"skill": "UX/Design", "classname": "ux-design", "level": 50},
+            {"skill": "DevOps", "classname": "devops", "level": 50},
+            {"skill": "Python/Django", "classname": "python-django", "level": 50}
           ]
         }]
       },

@@ -1,5 +1,24 @@
+@import "../../static/css/settings";
+
+.testimonials {
+  .pane__content {
+    display: flex;
+  }
+}
+
 .testimonial {
   display: flex;
+  flex: 1 1 0;
+  margin: $gutter;
+  padding: $gutter;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &__image {
     width: 100px;

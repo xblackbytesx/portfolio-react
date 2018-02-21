@@ -4,7 +4,7 @@ import './pane.css';
 const Pane = (props) => {
 
   return (
-    <section className="pane">
+    <section className={`pane ${props.className ? props.className : null}`}>
       <div className="pane__title">
         <h1>{props.title}</h1>
       </div>

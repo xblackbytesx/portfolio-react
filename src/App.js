@@ -67,7 +67,7 @@ class App extends Component {
             <Skills skills={this.state.components[4].mySkills[0].skills} />
           </Pane>
 
-          <Pane title={this.state.components[5].testimonials[0].title}>
+          <Pane title={this.state.components[5].testimonials[0].title} className="testimonials">
             {
               this.state.components[5].testimonials[0].testimonials.map((item, index) => {
                 return (
