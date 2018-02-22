@@ -47,9 +47,9 @@ $testimonial-border-radius: 3px;
   }
 
   article {
-    max-height: 100px;
     overflow: hidden;
     position: relative;
+    transition: all 0.5s linear;
 
     &::after {
       position: absolute;
@@ -59,6 +59,18 @@ $testimonial-border-radius: 3px;
       height: 100%;
       box-shadow: inset 0px -100px 30px -40px rgba(255,255,255,1);
       content: "";
+    }
+  }
+
+  &--collapsed {
+    article {
+      max-height: 100px;
+    }
+  }
+
+  &--expanded {
+    article {
+      max-height: none;
     }
   }
 }
