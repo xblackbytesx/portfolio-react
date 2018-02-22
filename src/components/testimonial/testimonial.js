@@ -7,9 +7,9 @@ class Testimonial extends Component {
   }
 
   toggleState = () => {
-    this.setState({
-      expanded: true
-    });
+    this.state.expanded
+      ? this.setState({expanded: false})
+      : this.setState({expanded: true})
 
     console.log(this.state);
   }
