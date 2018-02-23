@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TitleCrawl from './components/title-crawl/title-crawl';
 import Pane from './components/pane/pane';
+import ArticlePane from './components/article-pane/article-pane';
 import ContentSlider from './components/content-slider/content-slider';
 import MiniCard from './components/mini-card/mini-card';
 import Skills from './components/skills/skills';
@@ -32,28 +33,8 @@ class App extends Component {
           }
         </header>
         <div className="main">
-          {
-            this.state.components[1].aboutMe.map((component, index) => {
-              return (
-                <Pane title={component.title} image={component.image} key={component.index}>
-                  <article>
-                    <p>{component.content}</p>
-                  </article>
-                </Pane>
-              )
-            })
-          }
-          {
-            this.state.components[2].myWork.map((component, index) => {
-              return (
-                <Pane title={component.title} image={component.image} key={component.index}>
-                  <article>
-                    <p>{component.content}</p>
-                  </article>
-                </Pane>
-              )
-            })
-          }
+          <ArticlePane props={this.state.components[1].aboutMe} />
+          <ArticlePane props={this.state.components[2].myWork} />
 
           <ContentSlider slidesToShow={3} slidesToScroll={1}>
             {

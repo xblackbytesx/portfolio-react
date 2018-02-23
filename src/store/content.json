@@ -19,13 +19,39 @@
         "aboutMe": [{
           "title": "About Me",
           "image": "https://www.fabiobier.com/static/img/fabio-in-the-wild.jpg",
-          "content": "<h2>Experience</h2>\n <p>\n  I specialize in the design and development of clean and smart user interfaces for the modern web."
+          "content": [
+            {
+              "title": "Experience",
+              "body": "I specialize in the design and development of clean and smart user interfaces for the modern web. With over ten years of hands-on experience as a professional Front-end Developer I've experienced the radical shift towards mobile browsing up close and personal. Responsive design has since taken the web by storm, Anyone who's Anyone has responsive front-ends these days. I have built many responsive front-ends and thus have a whole bunch of experience in that field. Design"
+            },
+            {
+              "title": "Design",
+              "body": "Pretty is indeed a feature and it should be a huge priority. Let's face it, people love using things that look pretty and elegant. Sure, it has to be functional as well, but looking good can definitely add to function. With a degree in User Interaction Design I'm always on the lookout for creeping ugliness and usability."
+            },
+            {
+              "title": "Code",
+              "body": "I take pride in delivering not only clean designs but clean code as well. By conforming to the latest standards and using proper semantics I'm saving myself heaps of time fixing cross-browser related issues and basic SEO optimizations. Proper web standards gives me most of these things for free (no guarantees though, I always test). I believe good code is simple and readable code, no inception includes that point you to /dev/null."
+            },
+            {
+              "title": "Frameworks",
+              "body": "I often use a framework to jump-start a new project. This is not out of laziness It's about working smart and efficient. Sure I know how to build pretty much anything from scratch, but Open Source projects are often well documented and when a new developer joins the team he/she is often already familiar with the framework."
+            },
+            {
+              "title": "Personal life",
+              "body": "Being a Geek I go nuts about all things technology related. Sometimes you'll catch me on a slow Saturday setting up a new VPS or writing a Bash script for fun. It's quite pathetic actually :-P. I'm a huge music lover and spent much time discovering new bands. I recently became a Dad after our little James was born. Needless to say I am also a big Star Wars fan (mandatory geek thing I guess)."
+            }
+          ]
         }]
       },
       {
         "myWork": [{
           "title": "My Work",
-          "content": "<h2>Experience</h2> \n I specialize in the design and development of clean and smart user interfaces for the modern web."
+          "content": [
+            {
+              "title": "Experience",
+              "body": "I specialize in the design and development of clean and smart user interfaces for the modern web."
+            }
+          ]
         }]
       },
       {

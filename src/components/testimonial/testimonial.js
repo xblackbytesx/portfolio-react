@@ -20,7 +20,7 @@ class Testimonial extends Component {
         <figure className="testimonial__image">
           <img src={this.props.image} alt={this.props.name} />
         </figure>
-        <div class="testimonial__content">
+        <div className="testimonial__content">
           <h1>{this.props.name}</h1>
           <small>{this.props.title}, {this.props.company}</small>
           <article onClick={this.toggleState}>
