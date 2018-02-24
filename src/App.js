@@ -35,14 +35,6 @@ class App extends Component {
           <ArticlePane props={this.state.components[1].aboutMe} />
           <ArticlePane props={this.state.components[2].myWork} />
 
-          <ContentSlider slidesToShow={1} slidesToScroll={1}>
-            {
-              this.state.components[3].myProjects[0].projects.map((item, index) => {
-                return <img src={item.image} alt="test" />
-              })
-            }
-          </ContentSlider>
-
           <Pane title={this.state.components[4].mySkills[0].title}>
             <Skills skills={this.state.components[4].mySkills[0].skills} />
           </Pane>

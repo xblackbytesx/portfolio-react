@@ -51,6 +51,14 @@
               "title": "Experience",
               "body": "I specialize in the design and development of clean and smart user interfaces for the modern web."
             }
+          ],
+          "slider": [
+            {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+            {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"},
+            {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+            {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"},
+            {"title": "NU.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+            {"title": "NUSport.nl", "image": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"}
           ]
         }]
       },

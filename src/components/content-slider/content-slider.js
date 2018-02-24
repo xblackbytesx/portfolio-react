@@ -11,13 +11,18 @@ class ContentSlider extends Component {
       speed: 500,
       slidesToShow: this.props.slidesToShow,
       slidesToScroll: this.props.slidesToScroll,
-      initialSlide: 1
+      initialSlide: 1,
+      arrows: false
     };
 
     return (
       <div>
         <Slider {...settings}>
-          {this.props.children}
+        {
+          this.props.slides.map((slide, index) => {
+            return <img src={slide.image} alt="test" />
+          })
+        }
         </Slider>
       </div>
     );
