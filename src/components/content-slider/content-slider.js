@@ -4,19 +4,22 @@ import './content-slider.css';
 
 class ContentSlider extends Component {
   render() {
-    var settings = {
+    const settings = {
       dots: false,
-      infinite: false,
-      arrows: false,
+      lazyLoad: true,
+      infinite: true,
       speed: 500,
       slidesToShow: this.props.slidesToShow,
       slidesToScroll: this.props.slidesToScroll,
+      initialSlide: 1
     };
 
     return (
-      <Slider {...settings}>
-        {this.props.children}
-      </Slider>
+      <div>
+        <Slider {...settings}>
+          {this.props.children}
+        </Slider>
+      </div>
     );
   }
 }
