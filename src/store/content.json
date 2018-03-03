@@ -8,10 +8,16 @@
           "start": "A short time ago in a suburban town very, very close to Amsterdam…",
           "title": "Fabio Bier",
           "subtitle": "Front-end Jedi",
-          "body": [
-            {"p1": "It is a period of many connected devices."},
-            {"p2": "With so many different form factors offering a unified user experience across the board is often challenging."},
-            {"p3": "With so many different form factors offering a unified user experience across the board is often challenging.", "class": "center"}
+          "article": [
+            {"paragraph": "It is a period of many connected devices."},
+            {"paragraph": "With so many different form factors offering a unified user experience across the board is often challenging."},
+            {"paragraph": "However modern web technologies cater to these needs by ways of <strike>The Force</strike> CSS3 and HTML5."},
+            {"paragraph": "As a professional Front-end Developer it is my destiny to wield these forces for the good of Webkind."},
+            {"paragraph": "My work varies from designing beautiful user interfaces to developing entire front-ends using the latest Web Standards."},
+            {"paragraph": "I take pride in writing clean and semantic code with SEO and accesibility in mind. If you're interested in the inner workings of this page…"},
+            {"paragraph": "View the source, Luke!", "class": "center"},
+            {"paragraph": "Sorry. Couldn't resist it."},
+            {"paragraph": "Finally, Han shot first and the original, unadulterated movies remain the best. Stop fiddling with them, George!"}
           ]
         }]
       },
@@ -19,26 +25,26 @@
         "aboutMe": [{
           "title": "About Me",
           "image": "https://www.fabiobier.com/static/img/fabio-in-the-wild.jpg",
-          "content": [
+          "article": [
             {
               "title": "Experience",
-              "body": "I specialize in the design and development of clean and smart user interfaces for the modern web. With over ten years of hands-on experience as a professional Front-end Developer I've experienced the radical shift towards mobile browsing up close and personal. Responsive design has since taken the web by storm, Anyone who's Anyone has responsive front-ends these days. I have built many responsive front-ends and thus have a whole bunch of experience in that field. Design"
+              "paragraph": "I specialize in the design and development of clean and smart user interfaces for the modern web. With over ten years of hands-on experience as a professional Front-end Developer I've experienced the radical shift towards mobile browsing up close and personal. Responsive design has since taken the web by storm, Anyone who's Anyone has responsive front-ends these days. I have built many responsive front-ends and thus have a whole bunch of experience in that field. Design"
             },
             {
               "title": "Design",
-              "body": "Pretty is indeed a feature and it should be a huge priority. Let's face it, people love using things that look pretty and elegant. Sure, it has to be functional as well, but looking good can definitely add to function. With a degree in User Interaction Design I'm always on the lookout for creeping ugliness and usability."
+              "paragraph": "Pretty is indeed a feature and it should be a huge priority. Let's face it, people love using things that look pretty and elegant. Sure, it has to be functional as well, but looking good can definitely add to function. With a degree in User Interaction Design I'm always on the lookout for creeping ugliness and usability."
             },
             {
               "title": "Code",
-              "body": "I take pride in delivering not only clean designs but clean code as well. By conforming to the latest standards and using proper semantics I'm saving myself heaps of time fixing cross-browser related issues and basic SEO optimizations. Proper web standards gives me most of these things for free (no guarantees though, I always test). I believe good code is simple and readable code, no inception includes that point you to /dev/null."
+              "paragraph": "I take pride in delivering not only clean designs but clean code as well. By conforming to the latest standards and using proper semantics I'm saving myself heaps of time fixing cross-browser related issues and basic SEO optimizations. Proper web standards gives me most of these things for free (no guarantees though, I always test). I believe good code is simple and readable code, no inception includes that point you to /dev/null."
             },
             {
               "title": "Frameworks",
-              "body": "I often use a framework to jump-start a new project. This is not out of laziness It's about working smart and efficient. Sure I know how to build pretty much anything from scratch, but Open Source projects are often well documented and when a new developer joins the team he/she is often already familiar with the framework."
+              "paragraph": "I often use a framework to jump-start a new project. This is not out of laziness It's about working smart and efficient. Sure I know how to build pretty much anything from scratch, but Open Source projects are often well documented and when a new developer joins the team he/she is often already familiar with the framework."
             },
             {
               "title": "Personal life",
-              "body": "Being a Geek I go nuts about all things technology related. Sometimes you'll catch me on a slow Saturday setting up a new VPS or writing a Bash script for fun. It's quite pathetic actually :-P. I'm a huge music lover and spent much time discovering new bands. I recently became a Dad after our little James was born. Needless to say I am also a big Star Wars fan (mandatory geek thing I guess)."
+              "paragraph": "Being a Geek I go nuts about all things technology related. Sometimes you'll catch me on a slow Saturday setting up a new VPS or writing a Bash script for fun. It's quite pathetic actually :-P. I'm a huge music lover and spent much time discovering new bands. I recently became a Dad after our little James was born. Needless to say I am also a big Star Wars fan (mandatory geek thing I guess)."
             }
           ]
         }]
@@ -46,10 +52,10 @@
       {
         "myWork": [{
           "title": "My Work",
-          "content": [
+          "article": [
             {
               "title": "Experience",
-              "body": "I specialize in the design and development of clean and smart user interfaces for the modern web."
+              "paragraph": "I specialize in the design and development of clean and smart user interfaces for the modern web."
             }
           ],
           "slider": [

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import TitleCrawl from './components/title-crawl/title-crawl';
 import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
-import ContentSlider from './components/content-slider/content-slider';
 import Skills from './components/skills/skills';
 import Testimonial from './components/testimonial/testimonial';
 import Footer from './components/footer/footer';
@@ -17,19 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          {
-            this.state.components[0].titleCrawl.map((item, index) => {
-              return (
-                <TitleCrawl
-                  start={item.start}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  content={item.content}
-                  key={item.index}
-                />
-              )
-            })
-          }
+          <TitleCrawl props={this.state.components[0].titleCrawl} />
         </header>
         <div className="main">
           <ArticlePane props={this.state.components[1].aboutMe} />
