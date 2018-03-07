@@ -11,7 +11,7 @@
           "article": [
             {"paragraph": "It is a period of many connected devices."},
             {"paragraph": "With so many different form factors offering a unified user experience across the board is often challenging."},
-            {"paragraph": "However modern web technologies cater to these needs by ways of <strike>The Force</strike> CSS3 and HTML5."},
+            {"paragraph": "However modern web technologies cater to these needs by ways of ~~The Force~~ CSS3 and HTML5."},
             {"paragraph": "As a professional Front-end Developer it is my destiny to wield these forces for the good of Webkind."},
             {"paragraph": "My work varies from designing beautiful user interfaces to developing entire front-ends using the latest Web Standards."},
             {"paragraph": "I take pride in writing clean and semantic code with SEO and accesibility in mind. If you're interested in the inner workings of this page…"},

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const Article = (props) => {
   return (
@@ -6,7 +7,7 @@ const Article = (props) => {
       return (
         <article>
           <h1>{article.title}</h1>
-          <p>{article.paragraph}</p>
+          <ReactMarkdown source={article.paragraph} />
         </article>
       )
     })
