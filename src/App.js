@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import TitleCrawl from './components/title-crawl/title-crawl';
+import Header from './containers/header/header';
 import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
 import Testimonial from './components/testimonial/testimonial';
-import Footer from './components/footer/footer';
+import Footer from './containers/footer/footer';
+
 import StubData from './store/content.json';
 
 import './static/css/app.css';
@@ -15,9 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <TitleCrawl props={this.state.components[0].titleCrawl} />
-        </header>
+        <Header props={this.state.components[0].titleCrawl} />
         <div className="main">
           <ArticlePane props={this.state.components[1].aboutMe} />
           <ArticlePane props={this.state.components[2].myWork} />

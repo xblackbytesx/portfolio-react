@@ -10,8 +10,6 @@ class Testimonial extends Component {
     this.state.expanded
       ? this.setState({expanded: false})
       : this.setState({expanded: true})
-
-    console.log(this.state);
   }
 
   render() {
