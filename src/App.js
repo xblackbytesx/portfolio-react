@@ -41,7 +41,7 @@ class App extends Component {
             }
           </Pane>
         </div>
-        <Footer />
+        <Footer props={this.state.components[6].footer} />
       </div>
     );
   }

@@ -1,6 +1,5 @@
 {
-  "content": [
-    {
+  "content": [{
     "title": "Fabio Bier | Front-end developer",
     "components": [
       {
@@ -111,6 +110,50 @@
               "company": "AutoWeek",
               "image": "https://www.fabiobier.com/static/img/carolina.jpg",
               "content": "Fabio is a good example of a developer who knows how to produce with a creative marketing mind. Without hesitation he'll give you feedback on your briefing which only enhances your products features. As a developer he is not only focused on how to develop a product, but also on why and what for. With a great eye for design, he delivers products on deadline and with the latest usibility and SEO in mind. A great developer to exchange ideas with. Furthermore a cool guy to work with."
+            }
+          ]
+        }]
+      },
+      {
+        "footer": [{
+          "logo": "https://www.fabiobier.com/static/img/logo.svg",
+          "copyright": "&copy;2017 Fabio Bier.",
+          "linkList": [
+            {
+              "title": "Content",
+              "links": [
+                {"title": "About Me", "url": "#about-me"},
+                {"title": "My Work", "url": "#my-work"},
+                {"title": "Testimonials", "url": "#testimonials"},
+                {"title": "Contact", "url": "#contact"}
+              ]
+            },
+            {
+              "title": "Follow Me",
+              "links": [
+                {"title": "LinkedIn", "url": "https://www.linkedin.com/in/fabiobier"},
+                {"title": "Google+", "url": "https://plus.google.com/+FabioBierX"},
+                {"title": "Twitter", "url": "https://twitter.com/xblackbytesx"},
+                {"title": "Last.fm", "url": "http://www.last.fm/user/softsaurus"}
+              ]
+            },
+            {
+              "title": "Used Software",
+              "links": [
+                {"title": "Arch Linux", "url": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+                {"title": "Atom Editor", "url": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"},
+                {"title": "GIMP", "url": "https://www.fabiobier.com/static/img/portfolio/2015/website_nunl.jpg"},
+                {"title": "Inkscape", "url": "https://www.fabiobier.com/static/img/portfolio/2015/website_nusport.jpg"}
+              ]
+            },
+            {
+              "title": "Music that drives me",
+              "links": [
+                {"title": "Stick to Your Guns", "url": "https://www.last.fm/music/Stick+to+Your+Guns"},
+                {"title": "Architects", "url": "https://www.last.fm/music/Architects"},
+                {"title": "La Dispute", "url": "https://www.last.fm/music/La+Dispute"},
+                {"title": "Down to Nothing", "url": "http://www.last.fm/music/Down+to+Nothing"}
+              ]
             }
           ]
         }]
