@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkList from '../../components/link-list/link-list';
+import ListCollection from '../../components/list-collection/list-collection';
 import './footer.css';
 
 const Footer = (props) => (
@@ -16,7 +16,7 @@ const Footer = (props) => (
                       <img src={item.logo} alt="Logo Fabio Bier" />
                     </div>
 
-                    <LinkList content={item.linkList} />
+                    <ListCollection content={item.linkList} className="footer-links" />
 
                     <hr />
 

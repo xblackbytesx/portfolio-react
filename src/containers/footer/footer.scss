@@ -1,5 +1,14 @@
 @import "../../static/css/settings";
 
+.footer-links {
+  display: flex;
+
+  ul {
+    flex: 1 1 auto;
+
+  }
+}
+
 footer {
     ///////////////////////////////////////////////////////////////////////////////////
     $base-spacing: 1.5em !default;
@@ -54,14 +63,6 @@ footer {
         //      @include span-columns(3);
         //      @include omega(3n);
         //      @include clearfix;
-        //    }
-    }
-
-    li {
-        text-align: center;
-
-        //    @include media($medium-screen) {
-        //      text-align: left;
         //    }
     }
 

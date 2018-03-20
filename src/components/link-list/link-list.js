@@ -1,23 +1,18 @@
 import React from 'react';
 
 const LinkList = (props) => (
-  props.content.map((list, index) => {
-
-    return (
-      <ul key={index}>
-        <h3>{list.title}</h3>
-        {
-          list.links.map((link, index) => {
-            return (
-              <li key={index}>
-                <a href={link.url}>{link.title}</a>
-              </li>
-            )
-          })
-        }
-      </ul>
-    )
-  })
+  <ul className="link-list">
+    <h3>{props.content.title}</h3>
+    {
+      props.content.links.map((link, index) => {
+        return (
+          <li key={index} className="link-list__list-item">
+            <a href={link.url} className="link-list__link">{link.title}</a>
+          </li>
+        )
+      })
+    }
+  </ul>
 )
 
 export default LinkList;
