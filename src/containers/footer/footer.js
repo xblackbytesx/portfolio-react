@@ -11,12 +11,12 @@ const Footer = (props) => (
             {
               props.props.map((item, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <div className="footer-logo">
-                      <img src={item.logo} alt="Logo image" />
+                      <img src={item.logo} alt="Logo Fabio Bier" />
                     </div>
 
-                    <LinkList linklist={item.linkList} />
+                    <LinkList content={item.linkList} />
 
                     <hr />
 

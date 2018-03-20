@@ -5,7 +5,7 @@ import './title-crawl.css';
 const TitleCrawl = (props) => (
   props.props.map((item, index) => {
     return (
-      <section className="main-intro">
+      <section key={index} className="main-intro">
         <article className="star-wars-titles">
           <p id="start">{item.start}</p>
 

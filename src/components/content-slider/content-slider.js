@@ -20,7 +20,7 @@ class ContentSlider extends Component {
         <Slider {...settings}>
         {
           this.props.slides.map((slide, index) => {
-            return <img src={slide.image} alt="test" />
+            return <img key={index} src={slide.image} alt="test" />
           })
         }
         </Slider>

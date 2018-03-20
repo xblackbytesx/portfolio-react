@@ -8,7 +8,7 @@ const Pane = (props) => (
     </div>
     { props.image
       ? <figure className="pane__image">
-          <img src={props.image} alt="Pane image" />
+          <img src={props.image} alt={props.image} />
         </figure>
       : null
     }
@@ -17,7 +17,7 @@ const Pane = (props) => (
     </div>
     { props.footerLink
       ? <footer className="pane__footer">
-          <a href="#">props.footerLink</a>
+          <a href={props.footerLink}>props.footerLink</a>
         </footer>
       : null
     }

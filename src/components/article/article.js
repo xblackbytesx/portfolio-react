@@ -15,7 +15,7 @@ const Article = (props) => (
       : null;
 
     return (
-      <article>
+      <article key={index}>
         {title}
         {paragraph}
       </article>

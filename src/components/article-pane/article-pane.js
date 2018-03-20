@@ -15,7 +15,7 @@ const ArticlePane = (props) => (
     let image =
       item.image
       ? <figure className="pane__image">
-          <img src={item.image} alt="Pane image" />
+          <img src={item.image} alt={item.image} />
         </figure>
       : null
 
@@ -34,7 +34,7 @@ const ArticlePane = (props) => (
       : null
 
     return (
-      <section className={`pane ${item.className ? item.className : null}`}>
+      <section key={index} className={`pane ${item.className ? item.className : null}`}>
         {title}
         {image}
         {slider}

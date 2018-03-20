@@ -30,6 +30,7 @@ class App extends Component {
               this.state.components[5].testimonials[0].testimonials.map((item, index) => {
                 return (
                   <Testimonial
+                    key={index}
                     name={item.name}
                     title={item.title}
                     company={item.company}

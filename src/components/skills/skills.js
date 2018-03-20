@@ -9,7 +9,7 @@ const Skills = (props) => (
         {
             props.skills.map((skill, index) => {
             return (
-              <li>
+              <li key={index}>
                 <ProgressBar
                   className={skill.classname}
                   level={skill.level}
