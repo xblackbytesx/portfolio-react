@@ -3,10 +3,6 @@
 .footer-links {
   display: flex;
 
-  ul {
-    flex: 1 1 auto;
-  }
-
   h3 {
     color: #FFF;
   }
@@ -100,23 +96,23 @@ footer {
         text-align: center;
     }
 
-    // @include media($tablet) {
-    //     .footer-links {
-    //         margin-top: 285px;
-    //         padding: 0 $gutter;
-    //
-    //         section {
-    //             // @include span-columns(2);
-    //             text-align: center;
-    //         }
-    //
-    //         ul {
-    //             display: inline-block;
-    //         }
-    //
-    //         li {
-    //             text-align: left;
-    //         }
-    //     }
-    // }
+    @media screen and (min-width: 768px) {
+        .footer-links {
+            margin-top: 285px;
+            padding: 0 $gutter;
+
+            .list-collection__group {
+              flex: 1 1 auto;
+              text-align: center;
+            }
+
+            ul {
+              display: inline-block;
+
+              li {
+                text-align: left;
+              }
+            }
+        }
+    }
 }

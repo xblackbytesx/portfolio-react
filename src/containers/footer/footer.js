@@ -7,7 +7,7 @@ const Footer = (props) => (
       <h1 className="visuallyhidden">Footer</h1>
 
       <div className="master-container">
-          <div className="main-container">
+          <div className="main">
             {
               props.props.map((item, index) => {
                 return (

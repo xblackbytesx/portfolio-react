@@ -2,7 +2,7 @@ import React from 'react';
 
 const LinkList = (props) => (
   <ul className="link-list">
-    <h3>{props.content.title}</h3>
+    <li><h3>{props.content.title}</h3></li>
     {
       props.content.links.map((link, index) => {
         return (

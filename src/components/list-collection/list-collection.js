@@ -6,7 +6,9 @@ const ListCollection = (props) => (
     {
       props.content.map((list, index) => {
         return (
-          <LinkList key={index} content={list} />
+          <div className="list-collection__group">
+            <LinkList key={index} content={list} />
+          </div>
         )
       })
     }
