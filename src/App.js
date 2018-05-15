@@ -3,6 +3,7 @@ import Header from './containers/header/header';
 import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
+import LastFm from './components/lastfm/Lastfm';
 import Testimonial from './components/testimonial/testimonial';
 import Footer from './containers/footer/footer';
 
@@ -23,6 +24,10 @@ class App extends Component {
 
           <Pane title={this.state.components[4].mySkills[0].title}>
             <Skills skills={this.state.components[4].mySkills[0].skills} />
+          </Pane>
+
+          <Pane title="Music">
+            <LastFm apiKey={"9d92732638e517cb06c246ca143e766e"} username={"softsaurus"} tracks={10} />
           </Pane>
 
           <Pane title={this.state.components[5].testimonials[0].title} className="testimonials">
