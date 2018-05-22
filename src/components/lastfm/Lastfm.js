@@ -93,6 +93,15 @@ class LastFm extends React.Component {
         while(i < lfm.props.tracks) {
           var date = track.date ? lfm.timeSince(parseInt(track.date.uts, 10) * 1000 ) : 'Now Playing';
 
+          // if (i < 1) {
+          //   console.log('first');
+          //
+          // }
+          //
+          // if (i >= 1) {
+          //   console.log('the rest');
+          // }
+
           return (
             <TrackCard artist={track.artist['#text']}
               title={track.name}

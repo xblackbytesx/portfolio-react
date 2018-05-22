@@ -6,6 +6,7 @@ import Skills from './components/skills/skills';
 import LastFm from './components/lastfm/Lastfm';
 import Testimonial from './components/testimonial/testimonial';
 import Footer from './containers/footer/footer';
+import NavBar from './components/navbar/navbar';
 
 import StubData from './store/content.json';
 
@@ -26,13 +27,17 @@ class App extends Component {
             <Skills skills={this.state.components[4].mySkills[0].skills} />
           </Pane>
 
-          <Pane title="Music">
-            <LastFm apiKey={"9d92732638e517cb06c246ca143e766e"} username={"softsaurus"} tracks={10} />
+          <Pane title={this.state.components[5].myMusic[0].title}>
+            <LastFm
+              username={this.state.components[5].myMusic[0].lastFm[0].username}
+              apiKey={this.state.components[5].myMusic[0].lastFm[0].apiKey}
+              tracks={this.state.components[5].myMusic[0].lastFm[0].tracks}
+            />
           </Pane>
 
-          <Pane title={this.state.components[5].testimonials[0].title} className="testimonials">
+          <Pane title={this.state.components[6].testimonials[0].title} className="testimonials">
             {
-              this.state.components[5].testimonials[0].testimonials.map((item, index) => {
+              this.state.components[6].testimonials[0].testimonials.map((item, index) => {
                 return (
                   <Testimonial
                     key={index}
@@ -47,7 +52,8 @@ class App extends Component {
             }
           </Pane>
         </div>
-        <Footer props={this.state.components[6].footer} />
+        <Footer props={this.state.components[7].footer} />
+        <NavBar />
       </div>
     );
   }
