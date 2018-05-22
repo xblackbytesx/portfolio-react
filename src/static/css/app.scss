@@ -26,6 +26,11 @@ h1 {
   margin: 0 0 $gutter 0;
 }
 
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
 img {
   width: 100%;
   max-width: 100%;
