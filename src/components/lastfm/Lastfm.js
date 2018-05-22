@@ -1,5 +1,6 @@
 import React from 'react';
 import TrackCard from './track-card.js';
+import TrackList from './track-list.js';
 import './lastfm.css';
 
 class LastFm extends React.Component {
@@ -88,33 +89,48 @@ class LastFm extends React.Component {
   render() {
     let lfm = this;
 
-    if(this.state.data.length > 0){
-      var TrackNodes = this.state.data.map(function (track, i) {
-        while(i < lfm.props.tracks) {
+    if(this.state.data.length > 0) {
+      var TrackNodesFirst = this.state.data.map(function (track, index) {
+        while(index < 1) {
           var date = track.date ? lfm.timeSince(parseInt(track.date.uts, 10) * 1000 ) : 'Now Playing';
 
-          // if (i < 1) {
-          //   console.log('first');
-          //
-          // }
-          //
-          // if (i >= 1) {
-          //   console.log('the rest');
-          // }
-
           return (
-            <TrackCard artist={track.artist['#text']}
+            <TrackCard className="first" artist={track.artist['#text']}
               title={track.name}
               cover={track.image[3]['#text']}
               date = {date}
-              key={i}
+              key={index}
             />
           );
         }
       });
     }
 
-    return <div>{TrackNodes}</div>;
+    if(this.state.data.length > 0) {
+      var TrackNodesRest = this.state.data.map(function (track, index) {
+        while(index < lfm.props.tracks && index >= 1) {
+          var date = track.date ? lfm.timeSince(parseInt(track.date.uts, 10) * 1000 ) : 'Now Playing';
+
+          return (
+            <TrackList className="therest" artist={track.artist['#text']}
+              title={track.name}
+              cover={track.image[3]['#text']}
+              date = {date}
+              key={index}
+            />
+          );
+        }
+      });
+    }
+
+    return (
+      <div>
+        {TrackNodesFirst}
+        <ul>
+          {TrackNodesRest}
+        </ul>
+      </div>
+    )
   }
 }
 
