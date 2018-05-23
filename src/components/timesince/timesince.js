@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TimeSince = (props) => {
   let date = props.date;
 
@@ -42,9 +40,7 @@ const TimeSince = (props) => {
     intervalType += 's';
   }
 
-  return (
-    <div className="time-since">
-      interval + ' ' + intervalType + ' ago'
-    </div>
-  )
+  return interval + ' ' + intervalType + ' ago';
 }
+
+export default TimeSince;

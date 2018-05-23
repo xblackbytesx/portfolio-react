@@ -3,7 +3,7 @@ import TrackInfo from './track-info.js';
 import TrackCover from './track-cover.js';
 
 const TrackCard = (props) => (
-  <div className='lastfm-track'>
+  <div className='lastfm-track lastfm-track--card'>
     <TrackCover cover={props.cover} />
     <TrackInfo artist={props.artist} title={props.title} date={props.date}/>
   </div>
