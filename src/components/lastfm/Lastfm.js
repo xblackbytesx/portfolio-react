@@ -45,37 +45,10 @@ class LastFm extends React.Component {
   }
 
   render() {
-    if(this.state.data.length > 0) {
-      var LatestTrack =
-        <TrackCard
-          artist={this.state.data[0].artist['#text']}
-          title={this.state.data[0].name}
-          cover={this.state.data[0].image[3]['#text']}
-          date = {this.state.data[0].date}
-        />
-
-      var PreviousTracks = this.state.data.map((track, index) => {
-          if(index > 0) {
-            return (
-              <TrackList
-                artist={track.artist['#text']}
-                title={track.name}
-                cover={track.image[2]['#text']}
-                date={track.date}
-                key={index}
-              />
-            )
-          }
-      });
-    }
-
     return (
-      <div>
-        {LatestTrack}
-
-        <ul>
-          {PreviousTracks}
-        </ul>
+      <div className="lastfm-component">
+        <TrackCard props={this.state} />
+        <TrackList props={this.state} />
       </div>
     )
   }
