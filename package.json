@@ -1,34 +1,44 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio-react-rebuild",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-markdown": "^3.3.0",
-    "react-scripts": "1.1.4",
-    "react-slick": "^0.18.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-markdown": "^4.0.6",
+    "react-scripts": "2.1.2",
+    "react-slick": "^0.23.2",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.13",
-    "@storybook/addon-links": "^3.3.13",
-    "@storybook/addons": "^3.3.13",
-    "@storybook/react": "^3.3.13",
-    "babel-core": "^6.26.0"
+    "npm-run-all": "^4.1.5",
+    "@storybook/react": "^4.1.4",
+    "@storybook/addon-actions": "^4.1.4",
+    "@storybook/addon-links": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5"
   }
 }
