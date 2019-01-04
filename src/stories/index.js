@@ -6,14 +6,28 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
+import ProgressBar from '../components/progress-bar/progress-bar';
+import '../components/progress-bar/progress-bar.css';
+
+import Colors from './colors';
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('Button', module)
+storiesOf('Atoms/Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+
+storiesOf('Atoms/Colors', module)
+  .add("Colors", () => (
+    <Colors />
+  ))
+
+storiesOf('ProgressBar', module)
+  .add('skills', () => (
+    <ul id="skills">
+      <li>
+        <ProgressBar className="html">HTML</ProgressBar>
+      </li>
+    </ul>
+  )
+);
