@@ -25,7 +25,7 @@
 import React from 'react';
 import TrackInfo from './track-info.js';
 import TrackCover from './track-cover.js';
-import './track-card.css';
+// import './track-card.css';
 
 const TrackCard = (props) => (
   <div className="lastfm-track--card">

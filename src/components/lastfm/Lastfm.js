@@ -1,7 +1,7 @@
 import React from 'react';
 import TrackCard from './track-card.js';
 import TrackList from './track-list.js';
-import './lastfm.css';
+// import './lastfm.css';
 
 class LastFm extends React.Component {
 
