@@ -1,38 +1,12 @@
 @import "../../static/css/settings";
 
-.footer-links {
-  display: flex;
-
-  h3 {
-    color: #FFF;
-  }
-}
+$base-spacing: 1.5em !default;
+$footer-background: transparent url('../../static/img/earth.png') center bottom no-repeat;
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, .6);
+$footer-disclaimer-color: transparentize($footer-color, .6);
 
 footer {
-    ///////////////////////////////////////////////////////////////////////////////////
-    $base-spacing: 1.5em !default;
-    $base-accent-color: #477DCA !default;
-    $medium-screen: em(640) !default;
-    $large-screen: em(860) !default;
-
-    ul {
-        padding: 0;
-    }
-
-    li {
-        list-style: none;
-        line-height: 1.5em;
-    }
-
-    a {
-        text-decoration: none;
-    }
-    //////////////////////////////////////////////////////////////////////////////////
-
-    $footer-background: transparent url('https://www.fabiobier.com/static/img/earth.png') center bottom no-repeat;
-    $footer-color: white;
-    $footer-link-color: transparentize($footer-color, .6);
-    $footer-disclaimer-color: transparentize($footer-color, .6);
     background: $footer-background;
     padding: ($base-spacing * 2) $gutter;
     width: 100%;
@@ -47,22 +21,11 @@ footer {
     }
 
     .footer-links {
-        // @include clearfix;
-        margin-bottom: $base-spacing;
-
-        //    @include media($medium-screen) {
-        //      @include shift(3);
-        //    }
+      margin-bottom: $base-spacing;
     }
 
     ul {
         margin-bottom: $base-spacing * 2;
-
-        //    @include media($medium-screen) {
-        //      @include span-columns(3);
-        //      @include omega(3n);
-        //      @include clearfix;
-        //    }
     }
 
     li a {
@@ -100,19 +63,6 @@ footer {
         .footer-links {
             margin-top: 285px;
             padding: 0 $gutter;
-
-            .list-collection__group {
-              flex: 1 1 auto;
-              text-align: center;
-            }
-
-            ul {
-              display: inline-block;
-
-              li {
-                text-align: left;
-              }
-            }
         }
     }
 }

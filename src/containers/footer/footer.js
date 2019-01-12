@@ -1,6 +1,9 @@
 import React from 'react';
 import ListCollection from '../../components/list-collection/list-collection';
+
+// Static assets
 import './footer.css';
+import siteLogo from '../../static/img/logo.svg';
 
 const Footer = (props) => (
   <footer className="footer" role="contentinfo">
@@ -13,7 +16,7 @@ const Footer = (props) => (
                 return (
                   <div key={index}>
                     <div className="footer-logo">
-                      <img src={item.logo} alt="Logo Fabio Bier" />
+                      <img src={siteLogo} alt="Logo Fabio Bier" />
                     </div>
 
                     <ListCollection content={item.linkList} className="footer-links" />

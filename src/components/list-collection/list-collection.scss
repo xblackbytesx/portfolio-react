@@ -1,0 +1,39 @@
+.list-collection {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-content: space-between;
+
+  h3 {
+    color: #FFF;
+  }
+
+  &__group {
+    flex: auto;
+  }
+
+  ul {
+      padding: 0;
+  }
+
+  li {
+      list-style: none;
+      line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-collection {
+    &__group {
+      text-align: center;
+    }
+
+    ul {
+      display: inline-block;
+
+      li {
+        text-align: left;
+      }
+    }
+  }
+}

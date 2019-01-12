@@ -1,4 +1,5 @@
 import React from 'react';
+import './link-list.css';
 
 const LinkList = (props) => (
   <ul className="link-list">

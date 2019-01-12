@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkList from '../link-list/link-list';
+import './list-collection.css';
 
 const ListCollection = (props) => (
   <div className={`list-collection ${props.className ? props.className : null}`}>
