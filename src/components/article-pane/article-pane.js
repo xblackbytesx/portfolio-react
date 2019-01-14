@@ -1,4 +1,5 @@
 import React from 'react';
+import TrackVisibility from 'react-on-screen';
 import Article from '../article/article';
 import ContentSlider from '../content-slider/content-slider';
 
@@ -34,12 +35,14 @@ const ArticlePane = (props) => (
       : null
 
     return (
-      <section key={index} className={`pane ${item.className ? item.className : null}`}>
-        {title}
-        {image}
-        {slider}
-        {article}
-      </section>
+      <TrackVisibility once offset={1000}>
+        <section key={index} className={`pane ${item.className ? item.className : null}${isVisible}`}>
+          {title}
+          {image}
+          {slider}
+          {article}
+        </section>
+      </TrackVisibility>
     )
   })
 )
