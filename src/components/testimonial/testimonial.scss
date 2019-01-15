@@ -27,19 +27,21 @@ $testimonial-border-radius: 3px;
   }
 
   &__image {
-    flex: 1 1 auto;
+    flex: 1 0 25%;
     background: rgba(255,255,255,.9);
     border-top-left-radius: $testimonial-border-radius;
     border-bottom-left-radius: $testimonial-border-radius;
     // width: 100px;
 
     img {
+      width: 100%;
       // border-radius: 50%;
       border-top-left-radius: $testimonial-border-radius;
     }
   }
 
   &__content {
+    flex: 1 1 auto;
     padding: $gutter;
     background: #FFF;
     border-top-right-radius: $testimonial-border-radius;

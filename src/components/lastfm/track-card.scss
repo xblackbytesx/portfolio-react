@@ -13,12 +13,12 @@
   margin-right: 20px;
   margin-bottom: 20px;
   display: inline-block;
-  box-shadow: 1px 1px 7px #999;
-  transition: 0.2s all ease;
+  // box-shadow: 1px 1px 7px #999;
+  // transition: 0.2s all ease;
 
   &:hover {
     cursor: pointer;
-    box-shadow: 7px 6px 10px #999;
+    // box-shadow: 7px 6px 10px #999;
   }
 
   &__content {

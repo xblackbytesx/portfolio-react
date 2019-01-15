@@ -3,7 +3,7 @@ import TrackVisibility from 'react-on-screen';
 import Article from '../article/article';
 import ContentSlider from '../content-slider/content-slider';
 
-const ArticlePane = (props) => (
+const ArticlePaneStub = ({props, isVisible}) => (
   props.props.map((item, index) => {
 
     let title =
@@ -35,16 +35,22 @@ const ArticlePane = (props) => (
       : null
 
     return (
-      <TrackVisibility once offset={1000}>
-        <section key={index} className={`pane ${item.className ? item.className : null}${isVisible}`}>
+
+        <section key={index} className={`pane ${item.className ? item.className : null} ${isVisible ? 'appeared' : null}`}>
           {title}
           {image}
           {slider}
           {article}
         </section>
-      </TrackVisibility>
+
     )
   })
+)
+
+const ArticlePane = (props) => (
+  <TrackVisibility once partialVisibility>
+    <ArticlePaneStub props={props} />
+  </TrackVisibility>
 )
 
 export default ArticlePane;

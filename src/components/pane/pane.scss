@@ -5,9 +5,9 @@
     box-shadow: 0 1px 2px rgba(0,0,0,.5);
     border-radius: 3px;
     margin: 0 auto $gutter;
-    // transition: all 400ms ease;
-    // transform: translate3d(0px, 100px, 0) rotateX(-30deg) scale(1.25, 1.25);
-    // opacity: 0;
+    transition: all 400ms ease;
+    transform: translate3d(0px, 100px, 0) rotateX(-30deg) scale(1.25, 1.25);
+    opacity: 0;
 
     &__title,
     &__content {
@@ -18,6 +18,11 @@
         border-bottom: $gutter solid #FFF;
         border-radius: 3px 3px;
     }
+}
+
+.pane.appeared {
+    transform: translate3d(0px, 0px, 0px) rotateX(0) scale(1, 1);
+    opacity: 1;
 }
 
 // .tile.appeared,

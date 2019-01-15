@@ -9,7 +9,7 @@ const TrackInfo = (props) => {
 
   return(
     <div className='lastfm-track__content'>
-      <span className='lastfm-track__title' title={props.title}> {props.title}</span>
+      <h2 className='lastfm-track__title' title={props.title}> {props.title}</h2>
       <span className='lastfm-track__artist'>by {props.artist}</span>
       <span className='lastfm-track__scrobble-date'>
         {date}
