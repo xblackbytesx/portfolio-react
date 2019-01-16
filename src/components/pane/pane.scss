@@ -18,11 +18,11 @@
         border-bottom: $gutter solid #FFF;
         border-radius: 3px 3px;
     }
-}
 
-.pane.appeared {
-    transform: translate3d(0px, 0px, 0px) rotateX(0) scale(1, 1);
-    opacity: 1;
+    &.appeared {
+        transform: translate3d(0px, 0px, 0px) rotateX(0) scale(1, 1);
+        opacity: 1;
+    }
 }
 
 // .tile.appeared,
