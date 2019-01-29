@@ -1,0 +1,31 @@
+.videobg {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    box-shadow: 0 95px 100px 55px rgba(5, 0, 16, 1);
+
+    video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 10;
+    }
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+#bgvid {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #bgvid {
+        display: block;
+    }
+}
