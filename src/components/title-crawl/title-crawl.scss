@@ -16,6 +16,7 @@
         margin: 20% auto;
         color: #4EE;
         opacity: 0;
+        will-change: opacity;
         z-index: 1;
         animation: intro 2s ease-out;
     }
@@ -45,6 +46,7 @@
         color: #000;
         text-shadow: -2px -2px 0 #FF6, 2px -2px 0 #FF6, -2px 2px 0 #FF6, 2px 2px 0 #FF6;
         opacity: 0;
+        will-change: opacity, transform;
         z-index: 1;
         animation: logo 5s ease-out 2.5s;
     }
@@ -113,6 +115,7 @@
     #titlecontent {
         position: absolute;
         top: 100%;
+        will-change: top;
         animation: scroll 100s linear 4s infinite;
     }
 
