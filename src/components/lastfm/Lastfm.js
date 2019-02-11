@@ -21,7 +21,7 @@ class LastFm extends React.Component {
   }
 
   componentDidMount() {
-    console.log("cdm");
+    // console.log("cdm");
     let localLast = this;
 
     fetch(this.url, {
@@ -36,10 +36,10 @@ class LastFm extends React.Component {
         localLast.setState({
           data: data.recenttracks.track
         });
-        console.log(data);
+        // console.log(data);
       })
       .catch(function(err) {
-        console.log(err);
+        // console.log(err);
       }
     );
   }
