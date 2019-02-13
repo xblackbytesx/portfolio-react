@@ -125,9 +125,16 @@
         }]
       },
       {
+        "contactForm": [{
+          "title": "Contact Me",
+          "subtitle": "Drop a line and say hi!",
+          "email": "johndoe@example.com"
+        }]
+      },
+      {
         "footer": [{
           "logo": "https://www.fabiobier.com/static/img/logo.svg",
-          "copyright": "&copy;2017 Fabio Bier.",
+          "copyright": "&copy;2019 Fabio Bier.",
           "linkList": [
             {
               "title": "Content",

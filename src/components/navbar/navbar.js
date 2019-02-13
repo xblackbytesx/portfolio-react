@@ -19,20 +19,22 @@ class NavBar extends Component {
 
   render() {
     return(
-      <div>
-        <button className="button--test" onClick={this.toggleState}>Test</button>
-        <nav className={`navbar navbar--${this.state.expanded ? `expanded` : `collapsed`}`}>
-          <ul>
+      <nav className="navbar" role="navigation">
+        <div id="navbar__toggle">
+          <input type="checkbox" />
+
+          <img src={siteLogo} alt="Fabio Bier branding" />
+
+          <ul id="menu">
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#aboutme">My Work</a></li>
             <li><a href="#aboutme">Skills</a></li>
-            <li><img src={siteLogo} alt="Fabio Bier branding" /></li>
             <li><a href="#aboutme">Music</a></li>
             <li><a href="#aboutme">Testimonials</a></li>
             <li><a href="#aboutme">Contact</a></li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     )
   }
 }

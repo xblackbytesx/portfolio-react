@@ -5,6 +5,7 @@ import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
 import LastFm from './components/lastfm/Lastfm';
 import Testimonial from './components/testimonial/testimonial';
+import ContactForm from './components/contact-form/contact-form';
 import Footer from './containers/footer/footer';
 import NavBar from './components/navbar/navbar';
 
@@ -51,8 +52,13 @@ class App extends Component {
               })
             }
           </Pane>
+
+          <Pane title={this.state.components[7].contactForm[0].title}>
+            <ContactForm email={this.state.components[7].contactForm[0].email} />
+          </Pane>
+
         </div>
-        <Footer props={this.state.components[7].footer} />
+        <Footer props={this.state.components[8].footer} />
         <NavBar />
       </div>
     );
