@@ -1,11 +1,11 @@
 import React from 'react';
-import VideoBg from '../../components/videobg/videobg';
+import TwinkleStars from '../../components/twinkle-stars/twinkle-stars';
 import TitleCrawl from '../../components/title-crawl/title-crawl';
 import './header.css';
 
 const Header = (props) => (
   <header>
-    <VideoBg />
+    <TwinkleStars />
     <TitleCrawl props={props.props} />
   </header>
 )
