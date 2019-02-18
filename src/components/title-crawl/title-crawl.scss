@@ -1,4 +1,4 @@
-.star-wars-titles {
+.title-crawl {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -8,7 +8,7 @@
     overflow: hidden;
     z-index: 30;
 
-    p#start {
+    &__intro {
         position: relative;
         width: 16em;
         font-size: 200%;
@@ -21,42 +21,34 @@
         animation: intro 2s ease-out;
     }
 
-    @keyframes intro {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+    &__logo {
+      position: absolute;
+      width: 2.6em;
+      left: 50%;
+      top: 25%;
+      opacity: 0;
+      z-index: 1;
+      transform: translateZ(0);
+      animation: logo 5s ease-out 2.5s;
+
+      h1 {
+          font-size: 10em;
+          text-align: center;
+          margin-left: -1.3em;
+          line-height: .8em;
+          letter-spacing: -.05em;
+          color: #000;
+          text-shadow: -2px -2px 0 #FF6, 2px -2px 0 #FF6, -2px 2px 0 #FF6, 2px 2px 0 #FF6;
+      }
+
+      h1 sub {
+          display: block;
+          font-size: .3em;
+          letter-spacing: 0;
+          line-height: .8em;
+      }
     }
 
-    h1 {
-        position: absolute;
-        width: 2.6em;
-        left: 50%;
-        top: 25%;
-        font-size: 10em;
-        text-align: center;
-        margin-left: -1.3em;
-        line-height: .8em;
-        letter-spacing: -.05em;
-        color: #000;
-        text-shadow: -2px -2px 0 #FF6, 2px -2px 0 #FF6, -2px 2px 0 #FF6, 2px 2px 0 #FF6;
-        opacity: 0;
-        z-index: 1;
-        transform: translateZ(0);
-        animation: logo 5s ease-out 2.5s;
-    }
-
-    h1 sub {
-        display: block;
-        font-size: .3em;
-        letter-spacing: 0;
-        line-height: .8em;
-    }
 
     @keyframes logo {
         0% {
@@ -73,60 +65,54 @@
     }
 
     /* the interesting 3D scrolling stuff */
-    #titles {
-        position: absolute;
-        width: 18em;
-        height: 50em;
-        bottom: 0;
-        left: 50%;
-        margin-left: -9em;
-        font-size: 350%;
-        text-align: justify;
-        overflow: hidden;
-        transform: translateZ(0);
-        transform-origin: 50% 100%;
-        transform: perspective(300px) rotateX(25deg);
-    }
+    &__body {
+      position: absolute;
+      width: 18em;
+      height: 50em;
+      bottom: 0;
+      left: 50%;
+      margin-left: -9em;
+      font-size: 350%;
+      text-align: justify;
+      overflow: hidden;
+      transform: translateZ(0);
+      transform-origin: 50% 100%;
+      transform: perspective(300px) rotateX(25deg) translateY(100%);
+      animation: scroll 100s linear 4s infinite;
 
-    #titles:after {
-        position: absolute;
-        content: ' ';
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 60%;
-        // @include background-image(linear-gradient(top, rgba(5, 0, 16,1) 0%, transparent 100%));
-        pointer-events: none;
-    }
-
-    #titles p {
+      p {
         text-align: justify;
         margin: .8em 0;
 
-        &.center {
-            text-align: center;
-        }
+          &.center {
+              text-align: center;
+          }
+      }
+
+      a {
+          color: #FF6;
+          text-decoration: underline;
+      }
     }
 
-    #titles a {
-        color: #FF6;
-        text-decoration: underline;
-    }
-
-    #titlecontent {
-        position: absolute;
-        transform: translateZ(0);
-        transform: translateY(130%);
-        animation: scroll 100s linear 4s infinite;
-    }
-
-    /* animation */
-    @keyframes scroll {
+    @keyframes intro {
         0% {
-            transform: translateY(130%);
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
         }
         100% {
-            transform:translateY(-170%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: perspective(300px) rotateX(25deg) translateY(100%);
+        }
+        100% {
+            transform: perspective(300px) rotateX(25deg) translateY(-170%);
         }
     }
 }

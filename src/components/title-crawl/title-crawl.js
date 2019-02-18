@@ -6,20 +6,20 @@ const TitleCrawl = (props) => (
   props.props.map((item, index) => {
     return (
       <section key={index} className="main-intro">
-        <article className="star-wars-titles">
-          <p id="start">{item.start}</p>
+        <article className="title-crawl">
+          <div className="title-crawl__intro">
+            <p>{item.start}</p>
+          </div>
 
-          <header>
+          <header className="title-crawl__logo">
             <h1>{item.title} <sub>{item.subtitle}</sub></h1>
           </header>
 
-          <div id="titles">
-            <div id="titlecontent">
-              { item.article
-                ? <Article article={item.article} />
-                : null
-              }
-            </div>
+          <div className="title-crawl__body">
+            { item.article
+              ? <Article article={item.article} />
+              : null
+            }
           </div>
         </article>
       </section>

@@ -4,10 +4,7 @@ import React from 'react';
 import './twinkle-stars.css';
 
 const TwinkleStars = (props) => (
-  <div className="twinkle-stars">
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-  </div>
+  <div className="twinkle-stars"></div>
 )
 
 export default TwinkleStars;

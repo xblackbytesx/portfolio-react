@@ -4,7 +4,7 @@ import TitleCrawl from '../../components/title-crawl/title-crawl';
 import './header.css';
 
 const Header = (props) => (
-  <header>
+  <header className="header">
     <TwinkleStars />
     <TitleCrawl props={props.props} />
   </header>
