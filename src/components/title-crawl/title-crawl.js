@@ -22,6 +22,12 @@ const TitleCrawl = (props) => (
             }
           </div>
         </article>
+
+        {/*
+          <div className="stardestroyer">
+          <div className="stardestroyer__shape"></div>
+        </div>
+        */}
       </section>
     )
   })

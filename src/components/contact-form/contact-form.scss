@@ -1,0 +1,30 @@
+@import "../../static/css/settings";
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 2em;
+  padding: 3px;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  margin-bottom: $gutter;
+}
+
+label {
+  order: 1;
+  width: 10em;
+  padding-right: 0.5em;
+}
+
+input, textarea, select {
+  order: 2;
+  flex: 1 1 auto;
+}
