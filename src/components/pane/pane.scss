@@ -1,7 +1,7 @@
 @import "../../static/css/settings";
 
 .pane {
-    background: #FFF;
+    background-color: #FFF;
     box-shadow: 0 1px 2px rgba(0,0,0,.5);
     border-radius: 3px;
     margin: 0 auto $gutter;
@@ -23,6 +23,12 @@
         transform: translate3d(0px, 0px, 0px) rotateX(0) scale(1, 1);
         opacity: 1;
     }
+}
+
+.dark-mode--enabled {
+  .pane {
+    background-color: #333;
+  }
 }
 
 // .tile.appeared,
