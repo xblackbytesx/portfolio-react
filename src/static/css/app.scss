@@ -45,3 +45,8 @@ figure {
   margin: $gutter auto;
   padding: $gutter;
 }
+
+.customizations {
+  position: fixed;
+  z-index: 9999;
+}

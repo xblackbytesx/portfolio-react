@@ -25,9 +25,24 @@
     }
 }
 
-.dark-mode--enabled {
-  .pane {
-    background-color: #333;
+.color-mode {
+  &--dark {
+    .pane {
+      background-color: #333;
+      color: #FFF;
+    }
+  }
+}
+
+.display-style {
+  &--tiles {
+    .main {
+      display: flex;
+
+      div {
+        flex: 1 1 auto;
+      }
+    }
   }
 }
 
