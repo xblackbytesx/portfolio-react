@@ -4,8 +4,8 @@ import './contact-form.css';
 const ContactForm = (props) => (
   <section className="contact-form">
     <h1 className="visuallyhidden">Contact Form</h1>
-    <fieldset>
-      <form action={`https://formspree.io/${props.email}`} method="POST" enctype="text/plain">
+    <form action={`https://formspree.io/${props.email}`} method="POST" enctype="text/plain">
+      <fieldset>
         <div>
           <label for="contact-name">Name:</label>
           <input type="text" name="name" id="contact-name" autocomplete="off" />
@@ -25,8 +25,8 @@ const ContactForm = (props) => (
         <div>
           <input type="submit" value="Submit" />
         </div>
-      </form>
-    </fieldset>
+      </fieldset>
+    </form>
   </section>
 )
 
