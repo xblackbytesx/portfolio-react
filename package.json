@@ -8,7 +8,7 @@
     "react-dom": "^16.7.0",
     "react-markdown": "^4.0.6",
     "react-on-screen": "^2.1.1",
-    "react-scripts": "2.1.2",
+    "react-scripts": "2.1.8",
     "react-slick": "^0.23.2",
     "slick-carousel": "^1.8.1"
   },
@@ -26,7 +26,10 @@
     "build-storybook": "build-storybook -s public"
   },
   "reactSnap": {
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
