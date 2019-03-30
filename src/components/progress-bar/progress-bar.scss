@@ -1,68 +1,90 @@
+// .bar-wrapper {
+//     display: block;
+//     position: relative;
+//     margin-bottom: 50px;
+//     background-image: linear-gradient(to bottom, #E1DDD9, #E9E5E2);
+//     height: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0 1px 0 #BEBBB9 inset, 0 1px 0 #FCFCFC;
+// }
+//
+// .bar {
+//     height: 18px;
+//     margin: 1px 2px;
+//     position: absolute;
+//     border-radius: 10px;
+//     box-shadow: 0 1px 0 #FCFCFC inset, 0 1px 0 #BEBBB9;
+// }
+//
+// .bar-title {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+//
+// $colorlist: #7d30fa, darkblue, blue, #00ccff,  green,lime, yellow, orange, red, darkred;
+// @mixin gradient($i) {
+//   background: repeating-linear-gradient(
+//     0deg,
+//     white,
+//     white 0.1em,
+//     nth($colorlist, $i) 0.2em,
+//     nth($colorlist, $i) 1em
+//   );
+// }
+//
+// .peak {
+//   position: absolute;
+//   top: 50%;
+//   width: 2em;
+//   height: 1em;
+// }
+//
+// @for $i from 1 to 11 {
+//   .grad#{$i} {
+//     @include gradient($i);
+//         // box-shadow: 0 0 2em 0 nth($colorlist, $i), 0 0 0.5em 0 black;
+//         animation: play #{$i+200+random(750)/2}ms steps(10, end) infinite alternate;
+//   }
+//
+//   .p#{$i} {
+//     left: 25% + ($i*4);
+//     transform-origin: 0% 0%;
+//     transform: rotateX(180deg);
+//   }
+//
+//   .s#{$i} {
+//     left: 25% + ($i*4);
+//     top: 51%;
+//     transform-origin: 0% 50%;
+//     transform: rotateX(-180deg);
+//   }
+// }
+//
+// @keyframes play {
+//   to {
+//     height: 11em;
+//   }
+// }
+
 .bar-wrapper {
-    display: block;
-    position: relative;
-    margin-bottom: 50px;
-    background-image: linear-gradient(to bottom, #E1DDD9, #E9E5E2);
-    height: 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 0 #BEBBB9 inset, 0 1px 0 #FCFCFC;
-}
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 
-.bar {
-    height: 18px;
-    margin: 1px 2px;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0 1px 0 #FCFCFC inset, 0 1px 0 #BEBBB9;
-}
-
-.bar-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-$colorlist: #7d30fa, darkblue, blue, #00ccff,  green,lime, yellow, orange, red, darkred;
-@mixin gradient($i) {
-  background: repeating-linear-gradient(
-    0deg,
-    white,
-    white 0.1em,
-    nth($colorlist, $i) 0.2em,
-    nth($colorlist, $i) 1em
-  );
-}
-
-.peak {
-  position: absolute;
-  top: 50%;
-  width: 2em;
-  height: 1em;
-}
-
-@for $i from 1 to 11 {
-  .grad#{$i} {
-    @include gradient($i);
-        // box-shadow: 0 0 2em 0 nth($colorlist, $i), 0 0 0.5em 0 black;
-        animation: play #{$i+200+random(750)/2}ms steps(10, end) infinite alternate;
+  progress {
+    flex: 1 1 auto;
   }
 
-  .p#{$i} {
-    left: 25% + ($i*4);
-    transform-origin: 0% 0%;
-    transform: rotateX(180deg);
-  }
-
-  .s#{$i} {
-    left: 25% + ($i*4);
-    top: 51%;
-    transform-origin: 0% 50%;
-    transform: rotateX(-180deg);
+  h3 {
+    flex: 0 1 40%;
   }
 }
 
-@keyframes play {
-  to {
-    height: 11em;
+@media screen and (min-width: 600px) {
+  .bar-wrapper {
+    h3 {
+      flex: 0 1 30%;
+    }
   }
 }

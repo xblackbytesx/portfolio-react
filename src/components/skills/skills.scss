@@ -19,173 +19,23 @@ $skills: (
   }
 
   li li {
-      padding-left: 150px;
       position: relative;
   }
 }
 
-@each $skill, $value in $skills {
-  .#{$skill} {
-      // width: nth($value, 1);
-      animation: #{$skill} 2s ease-out;
-      background-image: linear-gradient(to bottom, nth($value, 2), nth($value, 3));
-  }
-
-  @keyframes #{$skill} {
-      0% {
-          width: 0;
-      }
-      100% {
-          width: nth($value, 1);
-      }
-  }
-}
-
-meter {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 25px;
-  appearance: none;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-
-  /* Firefox */
-  background: none; /* Required to get rid of the default background prop. */
-  background-color: whiteSmoke;
-  box-shadow: 0 5px 5px -5px #333 inset;
-}
-
-meter::-webkit-meter-bar {
-  background: none; /* Important to get rid of default background. */
-  background-color: whiteSmoke;
-  box-shadow: 0 5px 5px -5px #333 inset;
-}
-
-meter::-webkit-meter-optimum-value {
-  transition: width .5s;
-  box-shadow: 0 5px 5px -5px #999 inset;
-  // background-image: linear-gradient( 90deg,
-  //                                    #8bcf69 5%,
-  //                                    #e6d450 5%,
-  //                                    #e6d450 15%,
-  //                                    #f28f68 15%,
-  //                                    #f28f68 55%,
-  //                                    #cf82bf 55%,
-  //                                    #cf82bf 95%,
-  //                                    #719fd1 95%,
-  //                                    #719fd1 100%);
-
-  // background-size: 100% 100%;
-}
-
-meter::-webkit-meter-optimum-value:hover {
-  // background-image: linear-gradient( 90deg,
-  //                                    #8bcf69 20%,
-  //                                    #e6d450 20%,
-  //                                    #e6d450 40%,
-  //                                    #f28f68 40%,
-  //                                    #f28f68 60%,
-  //                                    #cf82bf 60%,
-  //                                    #cf82bf 80%,
-  //                                    #719fd1 80%,
-  //                                    #719fd1 100%);
-
-  transition: width .5s;
-  width: 100% !important; /* !important keyword used to override the inline style in ebkit browsers. */
-}
-
-meter::-moz-meter-bar {
-  box-shadow: 0 5px 5px -5px #999 inset;
-  // background-image: linear-gradient( 90deg,
-  //                                    #8bcf69 5%,
-  //                                    #e6d450 5%,
-  //                                    #e6d450 15%,
-  //                                    #f28f68 15%,
-  //                                    #f28f68 55%,
-  //                                    #cf82bf 55%,
-  //                                    #cf82bf 95%,
-  //                                    #719fd1 95%,
-  //                                    #719fd1 100%);
-  //
-  // background-size: 100% 100%;
-}
-
-.swatch {
-  margin: 0; padding:0;
-  margin: 5em auto;
-  list-style-type: none;
-  width: 550px;
-  display: block;
-  position: relative;
-}
-
-.swatch::before {
-  content: '';
-  width: 100%;
-  height: 10px;
-  outline: 0px solid #000;
-  position: absolute;
-  top: -20px;
-  left: 0;
-  border-radius: 2px;
-  // background-image: linear-gradient( 90deg,
-  //                                    #8bcf69 20%,
-  //                                    #e6d450 20%,
-  //                                    #e6d450 40%,
-  //                                    #f28f68 40%,
-  //                                    #f28f68 60%,
-  //                                    #cf82bf 60%,
-  //                                    #cf82bf 80%,
-  //                                    #719fd1 80%,
-  //                                    #719fd1 100%);
-
-}
-
-.meter-gauge {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    background-color: whiteSmoke;
-    box-shadow: 0 5px 5px -5px #333 inset;
-    width: 550px;
-    height: 25px;
-    display: block;
-}
-
-.meter-gauge > span {
-  height: inherit;
-  box-shadow: 0 5px 5px -5px #999 inset;
-  background-color: blue;
-  // background-image: linear-gradient( 90deg,
-  //                                    #8bcf69 5%,
-  //                                    #e6d450 5%,
-  //                                    #e6d450 15%,
-  //                                    #f28f68 15%,
-  //                                    #f28f68 55%,
-  //                                    #cf82bf 55%,
-  //                                    #cf82bf 95%,
-  //                                    #719fd1 95%,
-  //                                    #719fd1 100%);
-  // background-size: 100% 100%;
-  display: block;
-  text-indent: -9999px;
-}
-
-// meter::-webkit-meter-bar {
-//   /* Let's animate this */
-//   animation: animate-stripes 5s linear infinite;
-//   background-image:
-//     linear-gradient(
-//       135deg,
-//       transparent,
-//       transparent 33%,
-//       rgba(0, 0, 0, 0.1) 33%,
-//       rgba(0, 0, 0, 0.1) 66%,
-//       transparent 66%
-//     );
-//   background-size: 50px 25px;
-// }
+// @each $skill, $value in $skills {
+//   .#{$skill} {
+//       // width: nth($value, 1);
+//       animation: #{$skill} 2s ease-out;
+//       background-image: linear-gradient(to bottom, nth($value, 2), nth($value, 3));
+//   }
 //
-// @keyframes animate-stripes {
-//   to { background-position: -50px 0; }
+//   @keyframes #{$skill} {
+//       0% {
+//           width: 0;
+//       }
+//       100% {
+//           width: nth($value, 1);
+//       }
+//   }
 // }
