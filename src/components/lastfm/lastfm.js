@@ -1,6 +1,5 @@
 import React from 'react';
-import TrackCard from './track-card.js';
-import TrackList from './track-list.js';
+import AlbumList from './album-list.js';
 import './lastfm.css';
 
 class LastFm extends React.Component {
@@ -9,10 +8,11 @@ class LastFm extends React.Component {
     super(props)
 
     let _username = this.props.username;
+    let _period = this.props.period;
     let _apiKey = this.props.apiKey;
-    let _limit = this.props.tracks;
+    let _limit = this.props.limit;
 
-    this.url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${_username}&api_key=${_apiKey}&limit=${_limit}&format=json`;
+    this.url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${_username}&period=${_period}&api_key=${_apiKey}&limit=${_limit}&format=json`;
 
     this.state = {
       data: []
@@ -34,7 +34,7 @@ class LastFm extends React.Component {
       })
       .then(function(data) {
         localLast.setState({
-          data: data.recenttracks.track
+          data: data.topalbums.album
         });
         // console.log(data);
       })
@@ -47,8 +47,7 @@ class LastFm extends React.Component {
   render() {
     return (
       <div className="lastfm-component">
-        <TrackCard props={this.state} />
-        <TrackList props={this.state} />
+        <AlbumList props={this.state} />
       </div>
     )
   }

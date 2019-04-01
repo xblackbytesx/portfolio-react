@@ -3,7 +3,6 @@ import Header from './containers/header/header';
 import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
-import LastFm from './components/lastfm/Lastfm';
 import Testimonial from './components/testimonial/testimonial';
 import ContactForm from './components/contact-form/contact-form';
 import Footer from './containers/footer/footer';
@@ -48,13 +47,7 @@ class App extends Component {
             <Skills skills={this.state.content.components[4].mySkills[0].skills} />
           </Pane>
 
-          <Pane title={this.state.content.components[5].myMusic[0].title}>
-            <LastFm
-              username={this.state.content.components[5].myMusic[0].lastFm[0].username}
-              apiKey={this.state.content.components[5].myMusic[0].lastFm[0].apiKey}
-              tracks={this.state.content.components[5].myMusic[0].lastFm[0].tracks}
-            />
-          </Pane>
+          <ArticlePane props={this.state.content.components[5].myMusic} />
 
           <Pane title={this.state.content.components[6].testimonials[0].title} className="testimonials">
             {
@@ -79,7 +72,6 @@ class App extends Component {
 
         </div>
         <Footer props={this.state.content.components[8].footer} />
-        <NavBar />
       </div>
     );
   }

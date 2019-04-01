@@ -95,10 +95,13 @@
       {
         "myMusic": [{
           "title": "Music",
-          "lastFm": [{
-            "username": "softsaurus",
-            "apiKey": "9d92732638e517cb06c246ca143e766e",
-            "tracks": 10
+          "widget": [{
+            "lastFm": [{
+              "username": "softsaurus",
+              "period": "3month",
+              "apiKey": "9d92732638e517cb06c246ca143e766e",
+              "limit": 15
+            }]
           }]
         }]
       },

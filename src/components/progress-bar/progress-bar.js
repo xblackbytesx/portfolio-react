@@ -3,8 +3,8 @@ import './progress-bar.css';
 
 const ProgressBar = (props) => (
   <span className="bar-wrapper">
-    <h3>{props.children}</h3>
-    <progress className={`bar ${props.className}`} value={props.value} max="100" />
+    <label for={`${props.className}_progress`}>{props.children}</label>
+    <progress id={`${props.className}_progress`} className={`bar ${props.className}`} value={props.value} max="100" />
   </span>
 )
 

@@ -2,6 +2,7 @@ import React from 'react';
 import TrackVisibility from 'react-on-screen';
 import Article from '../article/article';
 import ContentSlider from '../content-slider/content-slider';
+import LastFm from '../lastfm/lastfm';
 
 const ArticlePaneStub = ({props, isVisible}) => (
   props.props.map((item, index) => {
@@ -27,6 +28,18 @@ const ArticlePaneStub = ({props, isVisible}) => (
         </div>
       : null
 
+      let widget =
+        item.widget
+        ? <div className="pane__widget">
+            <LastFm
+              username={item.widget[0].lastFm[0].username}
+              period={item.widget[0].lastFm[0].period}
+              apiKey={item.widget[0].lastFm[0].apiKey}
+              limit={item.widget[0].lastFm[0].limit}
+            />
+          </div>
+        : null
+
     let article =
       item.article
       ? <div className="pane__content">
@@ -40,6 +53,7 @@ const ArticlePaneStub = ({props, isVisible}) => (
           {title}
           {image}
           {slider}
+          {widget}
           {article}
         </section>
 
