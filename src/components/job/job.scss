@@ -1,0 +1,50 @@
+@import "../../static/css/settings";
+
+$job-border-radius: 3px;
+
+.jobs {
+  border: 0;
+
+  .pane__content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+.job {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  margin: $gutter 0;
+  background-color: #EEE;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    // margin-right: 0;
+  }
+
+  &__image {
+    flex: 1 0 25%;
+    border-top-left-radius: $job-border-radius;
+    border-bottom-left-radius: $job-border-radius;
+    max-width: 150px;
+    width: 33%;
+
+    img {
+      width: 100%;
+      // border-radius: 50%;
+      border-top-left-radius: $job-border-radius;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    padding: $gutter;
+    border-top-right-radius: $job-border-radius;
+    border-bottom-right-radius: $job-border-radius;
+  }
+}

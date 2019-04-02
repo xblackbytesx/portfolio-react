@@ -4,6 +4,7 @@ import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
 import Testimonial from './components/testimonial/testimonial';
+import Job from './components/job/job';
 import ContactForm from './components/contact-form/contact-form';
 import Footer from './containers/footer/footer';
 import NavBar from './components/navbar/navbar';
@@ -66,12 +67,28 @@ class App extends Component {
             }
           </Pane>
 
-          <Pane title={this.state.content.components[7].contactForm[0].title}>
-            <ContactForm email={this.state.content.components[7].contactForm[0].email} />
+          <Pane title={this.state.content.components[7].resume[0].title} className="resume">
+            {
+              this.state.content.components[7].resume[0].jobs.map((item, index) => {
+                return (
+                  <Job
+                    key={index}
+                    title={item.title}
+                    company={item.company}
+                    image={item.image}
+                    content={item.content}
+                  />
+                )
+              })
+            }
+          </Pane>
+
+          <Pane title={this.state.content.components[8].contactForm[0].title}>
+            <ContactForm email={this.state.content.components[8].contactForm[0].email} />
           </Pane>
 
         </div>
-        <Footer props={this.state.content.components[8].footer} />
+        <Footer props={this.state.content.components[9].footer} />
       </div>
     );
   }

@@ -11,16 +11,16 @@
     flex: 1 1 auto;
     order: 2;
 
-    &::-moz-progress-bar {
-      background-color: yellow;
-    }
+    // &::-moz-progress-bar {
+    //   background-color: yellow;
+    // }
+    //
+    // &::-webkit-progress-bar {
+    //   background-color: yellow;
+    // }
 
-    &::-webkit-progress-bar {
-      background-color: yellow;
-    }
-
-    &[value] {
-      appearance: none;
+    // &[value] {
+      // appearance: none;
 
       // &::-webkit-progress-value {
       //   background-color: blue;
@@ -32,7 +32,7 @@
       //         rgba(255, 255, 255, 0.5) 35px,
       //         rgba(255, 255, 255, 0.5) 70px
       //       );
-    }
+    // }
   }
 }
 
