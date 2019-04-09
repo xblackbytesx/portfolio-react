@@ -4,6 +4,7 @@ import Pane from './components/pane/pane';
 import ArticlePane from './components/article-pane/article-pane';
 import Skills from './components/skills/skills';
 import Testimonial from './components/testimonial/testimonial';
+import TimeMarker from './components/time-marker/time-marker';
 import Job from './components/job/job';
 import ContactForm from './components/contact-form/contact-form';
 import Footer from './containers/footer/footer';
@@ -71,13 +72,15 @@ class App extends Component {
             {
               this.state.content.components[7].resume[0].jobs.map((item, index) => {
                 return (
-                  <Job
-                    key={index}
-                    title={item.title}
-                    company={item.company}
-                    image={item.image}
-                    content={item.content}
-                  />
+                  <TimeMarker>
+                    <Job
+                      key={index}
+                      title={item.title}
+                      company={item.company}
+                      image={item.image}
+                      content={item.content}
+                    />
+                  </TimeMarker>
                 )
               })
             }

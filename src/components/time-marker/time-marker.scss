@@ -1,0 +1,87 @@
+@import "../../static/css/settings";
+
+$job-border-radius: 3px;
+$job-border-color: #AAA;
+
+.time-marker {
+  display: flex;
+
+  // &__image {
+  //   display: flex;
+  //   flex: 1 0 25%;
+  //   border-top-left-radius: $job-border-radius;
+  //   border-bottom-left-radius: $job-border-radius;
+  //   max-width: 150px;
+  //   width: 33%;
+  //   align-self: center;
+  //   min-height: 100%;
+  //   border: 1px solid green;
+  //   position: relative;
+  //   border-radius: 4px;
+  //   padding: $gutter-half;
+  //   text-align: center;
+  //
+  //   img {
+  //     width: 100%;
+  //     // border-radius: 50%;
+  //     border-top-left-radius: $job-border-radius;
+  //   }
+  // }
+
+  &__wrapper {
+    display: flex;
+    flex: 0 1 50%;
+    position: relative;
+    padding: $gutter;
+    border-color: $job-border-color;
+    border-style: solid;
+    border-width: 0;
+
+    &:first-child {
+      border-right-width: 2px;
+    }
+
+    &:last-child {
+      border-left-width: 2px;
+    }
+
+    &--empty {
+      h1 {
+        visibility: hidden;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      width: 10px;
+      height: 4px;
+      background-color: $job-border-color;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      content: '';
+    }
+  }
+
+  &:nth-child(2) {
+    .time-marker__wrapper {
+      order: 1;
+      border-right-width: 0;
+      border-left-width: 2px;
+
+      &::after {
+        left: 0;
+      }
+    }
+
+    .time-marker__wrapper--empty {
+      order: 0;
+      border-left-width: 0;
+      border-right-width: 2px;
+    }
+  }
+}
