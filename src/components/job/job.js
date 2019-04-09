@@ -15,15 +15,20 @@ class Job extends Component {
   render() {
     return(
       <section className={`job job--${this.state.expanded ? `expanded` : `collapsed`}`}>
-        <figure className="job__image">
-          <img src={this.props.image} alt={this.props.name} />
-        </figure>
-        <div className="job__content">
-          <h1>{this.props.title}</h1>
-          <small>{this.props.company}</small>
-          <article>
-            <p>{this.props.content}</p>
-          </article>
+        <div className="job__wrapper">
+          <figure className="job__image">
+            <img src={this.props.image} alt={this.props.name} />
+          </figure>
+          <div className="job__content">
+            <h1>{this.props.title}</h1>
+            <small>{this.props.company}</small>
+            <article>
+              <p>{this.props.content}</p>
+            </article>
+          </div>
+        </div>
+        <div className="job__wrapper job__wrapper--empty">
+          <h1>Invisible</h1>
         </div>
       </section>
     )

@@ -2,30 +2,8 @@
 
 $job-border-radius: 3px;
 
-.jobs {
-  border: 0;
-
-  .pane__content {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-}
-
 .job {
   display: flex;
-  flex: 1 1 0;
-  align-items: center;
-  margin: $gutter 0;
-  background-color: #EEE;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    // margin-right: 0;
-  }
 
   &__image {
     flex: 1 0 25%;
@@ -41,10 +19,35 @@ $job-border-radius: 3px;
     }
   }
 
-  &__content {
-    flex: 1 1 auto;
-    padding: $gutter;
-    border-top-right-radius: $job-border-radius;
-    border-bottom-right-radius: $job-border-radius;
+  &__wrapper {
+    display: flex;
+    flex: 0 1 50%;
+
+    &:first-child {
+      border-right: 1px solid #AAA;
+    }
+    &:last-child {
+      border-left: 1px solid #AAA;
+    }
+
+    &--empty {
+      h1 {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .job__wrapper {
+      order: 1;
+      border-right: 0;
+      border-left: 1px solid #AAA;
+    }
+
+    .job__wrapper--empty {
+      order: 0;
+      border-left: 0;
+      border-right: 1px solid #AAA;
+    }
   }
 }
