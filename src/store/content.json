@@ -134,19 +134,19 @@
             {
               "title": "Front-end Developer",
               "company": "Sanoma | NU.nl",
-              "image": "https://www.nu.nl/static/img/atoms/images/logos/nu_logo.svg",
+              "image": "logo-nu.svg",
               "content": "This job is fun!"
             },
             {
               "title": "Front-end Developer",
               "company": "Greenpeace",
-              "image": "https://www.greenpeace.org/nl/wp-content/themes/planet4-master-theme/images/gp-logo.svg",
+              "image": "logo-gp.svg",
               "content": "This job was fun!"
             },
             {
               "title": "Front-end Developer",
               "company": "Ahold Delhaize",
-              "image": "https://static.ah.nl/1.380.1/_ui/img/logo-ah.svg",
+              "image": "logo-ah.svg",
               "content": "This job was fun!"
             }
           ]

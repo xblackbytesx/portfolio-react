@@ -5,6 +5,7 @@ $job-border-color: #AAA;
 
 .job {
   display: flex;
+  flex-flow: row wrap;
   width: 100%;
 
   &__image {
@@ -13,7 +14,6 @@ $job-border-color: #AAA;
     border-top-left-radius: $job-border-radius;
     border-bottom-left-radius: $job-border-radius;
     max-width: 150px;
-    width: 33%;
     align-self: center;
     min-height: 100%;
     border: 1px solid green;
