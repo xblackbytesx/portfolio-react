@@ -1,0 +1,13 @@
+[Unit]
+Description=Systemd service for site: beta.fabiobier.com
+
+[Service]
+Type=simple
+WorkingDirectory=/home/fabio/projects/portfolio-react
+User=998
+Environment="NODE_ENV=production"
+ExecStart=/usr/local/bin/serve --single --ssl -p 5001 build
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
